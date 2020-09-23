@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Weik.io</Authors>
+    <Company>Weik.io</Company>
+    <Description>Harvest plugin for Api Framework.</Description>
+    <PackageDescription>Harvest plugin for Api Framework.</PackageDescription>
+    <PackageProjectUrl>https://www.weik.io</PackageProjectUrl>
+    <Copyright>©2020 Weik.io</Copyright>
+    <PackageId>Weikio.ApiFramework.Plugins.Harvest</PackageId>
+    <Product>Weikio.ApiFramework.Plugins.Harvest</Product>
+    <AssemblyName>Weikio.ApiFramework.Plugins.Harvest</AssemblyName>
+    <PackageTags>apiframework;Harvest</PackageTags>
+    <PackageIcon>logo_256.png</PackageIcon>
+    <Title>Harvest plugin for Api Framework.</Title>
+    <MinVerMinimumMajorMinor>1.0</MinVerMinimumMajorMinor>   
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.0.0" />
+    <PackageReference Include="Weikio.ApiFramework.Abstractions" Version="1.0.0-alpha.*" />
+    <PackageReference Include="PuppeteerSharp" Version="2.0.1" />
+    <PackageReference Include="LamarCompiler" Version="2.0.0" />
+    <PackageReference Include="Adafy.Harvest.Netstandard" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../docs/logo_256.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+
+</Project>
