@@ -22,15 +22,10 @@ namespace Weikio.ApiFramework.Plugins.Harvest.Sample
         {
             services.AddMemoryCache();
             services.AddControllers();
+
             services.AddApiFramework()
-                .AddApi(typeof(HarvestOptions).Assembly)
-                .AddEndpoint("/", "Weikio.ApiFramework.Plugins.Harvest", new HarvestOptions()
-                {
-                    HarvestCompany = "adafy",
-                    HarvestUser = "info@adafy.com",
-                    HarvestUserPassword = "*h84AWbD^9%Pv@uB"
-                });
-            
+                .AddHarvest("/harvest", new HarvestOptions() { HarvestCompany = "", HarvestUser = "", HarvestUserPassword = "" });
+
             services.AddOpenApiDocument();
         }
 
@@ -48,7 +43,7 @@ namespace Weikio.ApiFramework.Plugins.Harvest.Sample
 
             app.UseOpenApi();
             app.UseSwaggerUi3();
-            
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
