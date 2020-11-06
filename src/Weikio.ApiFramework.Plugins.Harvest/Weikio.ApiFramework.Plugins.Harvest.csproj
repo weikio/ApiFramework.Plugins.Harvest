@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Weikio.ApiFramework.Abstractions" Version="1.0.0-alpha.*" />
+    <PackageReference Include="Weikio.ApiFramework.SDK" Version="1.0.0-alpha.*" />
     <PackageReference Include="Adafy.Harvest.Netstandard" Version="1.0.0" />
     <PackageReference Include="Weikio.TypeGenerator" Version="1.2.2" />
   </ItemGroup>
