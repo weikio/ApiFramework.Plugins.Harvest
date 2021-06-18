@@ -14,9 +14,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Weikio.ApiFramework.SDK" Version="1.0.0-alpha.*" />
-    <PackageReference Include="Adafy.Harvest.Netstandard" Version="1.0.0" />
-    <PackageReference Include="Weikio.TypeGenerator" Version="1.2.2" />
+    <PackageReference Include="Weikio.ApiFramework.SDK" Version="1.0.0-alpha.0.90" />
+    <PackageReference Include="Adafy.Harvest.Netstandard" Version="1.1.1" />
+    <PackageReference Include="Weikio.TypeGenerator" Version="1.3.4" />
   </ItemGroup>
 
   <ItemGroup>

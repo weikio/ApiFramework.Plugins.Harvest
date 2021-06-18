@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Weikio.ApiFramework.AspNetCore" Version="1.0.0-alpha.0.53" />
-    <PackageReference Include="NSwag.AspNetCore" Version="13.7.3" />
+    <PackageReference Include="Weikio.ApiFramework.AspNetCore.StarterKit" Version="1.0.0-alpha.0.90" />
   </ItemGroup>
 
   <ItemGroup>

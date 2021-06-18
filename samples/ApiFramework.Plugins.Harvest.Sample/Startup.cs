@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Weikio.ApiFramework.AspNetCore;
+using Weikio.ApiFramework.AspNetCore.StarterKit;
 using Weikio.ApiFramework.Core.Extensions;
 
 namespace Weikio.ApiFramework.Plugins.Harvest.Sample
@@ -20,13 +21,10 @@ namespace Weikio.ApiFramework.Plugins.Harvest.Sample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMemoryCache();
             services.AddControllers();
 
-            services.AddApiFramework()
+            services.AddApiFrameworkStarterKit()
                 .AddHarvest("/harvest", new HarvestOptions() { HarvestCompany = "", HarvestUser = "", HarvestUserPassword = "" });
-
-            services.AddOpenApiDocument();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,9 +38,6 @@ namespace Weikio.ApiFramework.Plugins.Harvest.Sample
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
-
-            app.UseOpenApi();
-            app.UseSwaggerUi3();
 
             app.UseEndpoints(endpoints =>
             {
