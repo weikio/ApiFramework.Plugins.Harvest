@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weikio.ApiFramework.Plugins.Harvest", "Weikio.ApiFramework.Plugins.Harvest\Weikio.ApiFramework.Plugins.Harvest.csproj", "{10EB73D5-7FC7-4EB9-B904-C89C196D4D86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weikio.ApiFramework.Plugins.Harvest.Sample", "..\samples\ApiFramework.Plugins.Harvest.Sample\Weikio.ApiFramework.Plugins.Harvest.Sample.csproj", "{DB0792B2-8349-4384-9DD9-7E202001BE42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{C0051623-7BEC-40ED-AF1C-6B20B66AD6E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10EB73D5-7FC7-4EB9-B904-C89C196D4D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10EB73D5-7FC7-4EB9-B904-C89C196D4D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10EB73D5-7FC7-4EB9-B904-C89C196D4D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10EB73D5-7FC7-4EB9-B904-C89C196D4D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB0792B2-8349-4384-9DD9-7E202001BE42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0792B2-8349-4384-9DD9-7E202001BE42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0792B2-8349-4384-9DD9-7E202001BE42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0792B2-8349-4384-9DD9-7E202001BE42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB0792B2-8349-4384-9DD9-7E202001BE42} = {C0051623-7BEC-40ED-AF1C-6B20B66AD6E5}
+	EndGlobalSection
+EndGlobal

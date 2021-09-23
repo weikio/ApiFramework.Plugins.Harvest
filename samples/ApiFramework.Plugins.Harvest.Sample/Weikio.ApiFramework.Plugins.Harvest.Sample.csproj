@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Weikio.ApiFramework.AspNetCore.StarterKit" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Weikio.ApiFramework.Plugins.Harvest\Weikio.ApiFramework.Plugins.Harvest.csproj" />
+  </ItemGroup>
+  
+</Project>
